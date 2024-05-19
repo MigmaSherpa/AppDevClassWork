@@ -22,10 +22,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: PlantLanding(),
-
+      // home: PlantLanding(),
       // home: IntroTravel(),
-      //home: Auror(),  /*This is my secound Design */
+      home: Auror(), /*This is my secound Design */
       //home: Dare(), /* This is my first Design */
     );
   }

@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/models/Places.model.dart';
 
 class DetailsTravel extends StatelessWidget {
+  PlaceCardModel place;
+
+  DetailsTravel({required this.place});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Details screen'),
+          title: Text(place.title),
         ),
         body: Container(
           padding: EdgeInsets.only(top: 16, left: 16, right: 16),
@@ -21,14 +26,14 @@ class DetailsTravel extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Image.network(
-                    "https://cdn.pixabay.com/photo/2023/05/29/00/24/blue-tit-8024809_640.jpg",
+                    place.img,
                     fit: BoxFit.cover,
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 8),
                   child: Text(
-                    'Location info',
+                    place.description,
                     style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                   ),
                 ),

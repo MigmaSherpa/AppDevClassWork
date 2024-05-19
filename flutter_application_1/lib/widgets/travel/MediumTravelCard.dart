@@ -1,13 +1,15 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/screens/Details.travel.dart';
 import 'package:flutter_application_1/screens/models/Places.model.dart';
 
-
+import '../../screens/Details.travel.dart';
 
 class MediumTravelCard extends StatelessWidget {
-  String title;
-  String url;
-  String description;
+  final String title;
+  final url;
+  final description;
 
   MediumTravelCard({
     required this.title,
